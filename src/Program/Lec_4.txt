@@ -1,0 +1,24 @@
+------------------------------------------------------------------------------------------------------------------------------------
+
+
+Literals in Java :-
+    A Constant Value which can be assigned to the variable is called as a literal.
+
+101       ----->   Integer Literal
+10.1f     ----->   Float Literal
+10.1      ----->   Double Literal (By-default type for decimal)
+'A'       ----->   Character Literal
+true      ----->   Boolean Literal
+"Harry"   ----->  String Literal
+
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+
+keyword :-
+    - Words which are reserved and used by the Java Compiler.
+    - They cannot be used as a Identifier
+    - Identifier is name given to variable.
+
+
+------------------------------------------------------------------------------------------------------------------------------------

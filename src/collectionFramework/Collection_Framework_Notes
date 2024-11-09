@@ -1,0 +1,33 @@
+----------------------------------------------------------------------------------------------------------------------------------------
+
+Ways to create collectionFramework :-
+
+1) Type-Safe       :-   Same type of elements(objects) are added to collection.
+2) Non-type Safe   :-   Different types of elements can be added to collection.
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+1) Type-Safe
+
+    ArrayList<String> name = new ArrayList<String>();          <---- Valid
+    ArrayList<String> name = new ArrayList<>();                <---- Valid (Recommended)
+    ArrayList<> name = new ArrayList<String>();                <---- Invalid
+
+    name.add("Akash");
+    name.add("Shushan");
+    name.add(12);             <----- Error
+
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+2) Non-type Safe
+
+    LinkedList list = new LinkedList();                         <---- Valid but gives Warning
+    LinkedList<Object> list = new LinkedList<>();               <---- Valid (Recommended)
+
+    list.add("Akash");        <---- No Error
+    list.add(20);             <---- No Error
+    list.add(true);           <---- No Error
+    list.add(23.4523);        <---- No Error
+
+----------------------------------------------------------------------------------------------------------------------------------------

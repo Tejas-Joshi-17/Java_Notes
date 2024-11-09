@@ -1,0 +1,24 @@
+-------------------------------------------------------------------------------------------------------------------------
+
+71) Creating Thread :-
+
+-------------------------------------------------------------------------------------------------------------------------
+
+Creating a Thread :- There are two ways to create a Thread
+
+    (a) By Extending Thread Class.
+    (b) By Implementing Runnable Interface.
+
+-------------------------------------------------------------------------------------------------------------------------
+
+Thread Methods :-
+
+(a) start()         :-  Used to start Thread, automatically run() invoked.
+(b) getId()         :-  Used to get ID of Thread.
+(c) getName()       :-  Used to get Name of Thread.
+(d) setPriority()   :-  Set Priority of Thread.
+(e) getPriority()   :-  Get Priority of Thread.
+(f) sleep(x)        :-  Stop execution of thread for 'x' miliseconds.
+(g) join()          :-  Continue execution of this thread it any interupt throws Exception.
+
+-------------------------------------------------------------------------------------------------------------------------

@@ -1,0 +1,23 @@
+-------------------------------------------------------------------------------------------------------------------------
+
+69) Multi-Threading in Java :-
+
+-------------------------------------------------------------------------------------------------------------------------
+
+1. Multiprocessing :-
+    (a) Multiple Process Running at same time
+    (b) VS Code, Powerpoinit, Chrome, etc at same time
+    (c) Done by Operating System.
+    (d) Context-switching is slow
+
+2. Multithreading :- Multiple Task Running in same Process
+    (a) In Word processor, One thread running in background as an editor
+    (b) Another thread running as auto saving document
+    (C) Context-switching is fast.
+
+-------------------------------------------------------------------------------------------------------------------------
+
+Note :- (a) Process is High-Weight.
+        (b) Thread in Light-Weight.
+
+-------------------------------------------------------------------------------------------------------------------------

@@ -1,0 +1,33 @@
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+64) Packages in Java
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+1) A Package is used to group related classes.
+2) Package helps in avoiding name conflicts.
+
+Types of Package :-
+    (1) Built-in Package       :-  Java API
+    (2) User defined Package   :-  Custom Package
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+-- 1] import java.lang.*                   :-  import everything from java.lang
+-- 2] import java.lang.String              :-  import String from java.lang
+-- 3] s = new java.lang.String("Harry")    :-  Use without importing
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Creating a Package :-
+
+-- 1] javac Harry.java            :-  Create Harry.class
+-- 2] javac -d . Harry.java       :-  Create a Package folder
+                                      (We can keep adding classes to a package)
+
+1) Package com;           :-  javac -d . Harry.java
+                Create folder naming "com" and Harry.class file is placed in that folder
+2) Package com.company;   :-  javac -d . Harry.java
+                Creats folder "com" inside that "company" folder is created in that folder Harry.class is kept.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------

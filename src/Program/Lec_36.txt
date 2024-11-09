@@ -1,0 +1,19 @@
+------------------------------------------------------------------------------------------------------------------------------------
+
+What is Object-Oriented Programming :-
+    Solving a problem by creating objects is one of the most popular approaches in
+programming, This is called Object-Oriented Programming.
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+DRY (Do not Yourself) :-  Focus on Code Reusability.
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+1) Class :- It is blueprint for creating objects.
+
+2) Object :- An Object is an instantiation of a class. When a class is defined a
+             template(info) is defined, Memory is allocated only after object
+             instantiation.
+
+------------------------------------------------------------------------------------------------------------------------------------

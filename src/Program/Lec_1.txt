@@ -1,0 +1,45 @@
+------------------------------------------------------------------------------------------------------------------------------------
+
+
+1) Package com.company :- This package group these functions and classes
+
+2) public static void main(String[] args){ } :-
+        when there is no function in your java program and you want the snippet of a code to be executed so there is a default function inside every java program  whose name is always "main" along with that we write code inside this function, the code we have written here will be executed
+
+Now the function where is there or there are many such functions, they are
+basically inside a class
+Here the class name is "main" because filename is "Main.java" so class name is "main"
+
+inside this mian class, we created a function with name "public static void main" and we put this inside the package named "com.company"
+
+
+function => plumber
+class => collection of similar function
+         there can be many functions inside a class
+E.X. :- If you are creating a class inside which you need the function to do
+        all the household work
+        So we named class as "HouseholdRepair" inside which there can be plumber,carpenter,painter,execute
+Object => class is a template through which objects are made
+E.X. :- If you have a template "form" in which name,address,phone no. & age
+        is written so once you have created an entity by filling that form
+        then it become an object of that class.
+
+Note == You have to create the object of class in order to run the program
+
+But in that case, we had not created the function this is possbile because we
+have used "static" keyword
+
+
+void main indicate that function doesn't return any value after calling it.
+
+"main" is thename of the function, when you start a program in the java then
+the starting point will be "main" in this class
+
+Note == Your java program starts with main() function
+
+Here public is the acess modifier, public means your method of this class can be accessed from anywhere
+
+static makes it possible for us to run these functions without creating an object of the class
+
+
+------------------------------------------------------------------------------------------------------------------------------------

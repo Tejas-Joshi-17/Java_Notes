@@ -1,0 +1,19 @@
+------------------------------------------------------------------------------------------------------------------------------------
+
+
+Precedence of Operators :-
+    The operators are applied and evaluated based on precedence. For example (+,-) has less precedence compared to (*,/). Hence * & / are evaluated first. In case, we like to change this order, we can use parathesis.
+
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+
+Associativity :-
+    Associativity tells the direction of execution of operators. It can either be Left to Right or Right to Left.
+
+    * /      --->  Left to Right
+    + -      --->  Left to Right
+    ++ =     --->  Right to Left
+
+
+------------------------------------------------------------------------------------------------------------------------------------

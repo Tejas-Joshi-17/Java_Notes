@@ -1,0 +1,13 @@
+-------------------------------------------------------------------------------------------------------------------------
+
+78) Errors & Exception in Java :-
+
+-------------------------------------------------------------------------------------------------------------------------
+
+Types of Errors in Java
+
+1) Syntax Error                                            (Occurred due to Program's mistake)
+2) Logical Error   <----- Occurred due to Incorrect Logic  (Occurred due to Program's mistake)
+3) Runtime Error   <----- Also call Exception              (Occurred due to User's mistake)
+
+-------------------------------------------------------------------------------------------------------------------------

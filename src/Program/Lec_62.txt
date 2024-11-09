@@ -1,0 +1,22 @@
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+62) Compiler VS Interpreter :-
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+- 1) Interpreter translates one statement at a time into Machine Code.
+- 2) Compiler scans th entire program and translates whole code into Machine Code.
+
+1) Interpreter :-
+    ---> One statement at a time.
+    ---> Interpreter is needed everytime.
+    ---> Partial execution if error occured.
+    ---> Easy for Programmer.
+
+2) Compiler :-
+    ---> Entire Program at a time.
+    ---> Once Compiled it is not needed.
+    ---> No execution if an error occured.
+    ---> Usually not as easy as interpreted onces.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------

@@ -1,0 +1,13 @@
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Tags for Documenting Classes :-
+
+    Note :- You can include HTML tags in the JavaDoc.
+
+    Tag	          Syntax	                                 Description
+    @author	      @author name-text	                         Describes the author of a class.
+    @version	  @version version-number	                 Adds a "Version" heading which specifies the current version of the release or file.
+    @since	      @since release-date	                     Adds a "Since" heading that tells about the release date.
+    @see	      @see <a href="reference"></a>	             Adds a "See Also" heading that refers to the other element of the documentation.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

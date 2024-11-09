@@ -1,0 +1,20 @@
+-------------------------------------------------------------------------------------------------------------------------
+
+70) Thread Basic :-
+
+-------------------------------------------------------------------------------------------------------------------------
+
+1. Concurrency :-
+    (a) Concurrency is when multiple tasks can run in overlapping periods.
+    (b) It's an illusion of multiple tasks running in parallel because of a very fast switching by the CPU.
+    (c) Two tasks can't run at the same time in a single-core CPU.
+
+2. Parallelism :- Parallelism is when tasks actually run in parallel in multiple CPUs.
+
+-------------------------------------------------------------------------------------------------------------------------
+
+Note :-
+    (1) In Multi-threading Concurrency is achieved.
+    (2) Using Multithreading Asynchronous behaviour is achieved in java like in javascript.
+
+-------------------------------------------------------------------------------------------------------------------------

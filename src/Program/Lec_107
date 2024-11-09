@@ -1,0 +1,14 @@
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Tags for Documenting Methods :-
+
+    Note :- You can include HTML tags in the JavaDoc.
+
+    Tag	          Syntax	                                 Description
+    @return       @return return-description	             Adds a "Return" description that tells about the return value of the method.
+    @param	      @param param-description	                 Provides the information about the method parameters in the "Parameters" section.
+    @throws	      @exception exception-name description	     Displays the exception that can be thrown by a method ( same as @exception)
+    {@code}	      {@code text}	                             Displays text in code font without interpreting the text as HTML markup or nested javadoc tags.
+    @deprecated	  @deprecated deprecated text	             Adds a "Deprecated" heading indicating that this API should no longer be used.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

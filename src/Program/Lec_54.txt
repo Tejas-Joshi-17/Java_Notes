@@ -1,0 +1,21 @@
+------------------------------------------------------------------------------------------------------------------------------------
+    54) Introduction to Interfaces
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+1) Interface contains all Methods as Abstract.
+2) Abstract Class can contain Concreate methods but it contains atleast one Abstract Method.
+
+3) Using an abstract class as a reference, you can create an object of a concrete class.
+    Abstract_Class obj1 = new Concreate_Class();
+4) You cannot create an object of an abstract class using a reference to a concrete class.
+    Concreate_Class obj1 = new Abstract_Class();
+
+/5) Using Multiple Abstract Class we cann't create new class as Multiple Inheritence is not possible in Java.
+6) Using Multiple Interfaces we can create new class.
+
+7) Abstract Class , Concreate Class     -----> extends
+8) Interfaces                           -----> implements
+
+
+------------------------------------------------------------------------------------------------------------------------------------

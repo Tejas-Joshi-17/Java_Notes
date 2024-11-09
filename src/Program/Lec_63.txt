@@ -1,0 +1,29 @@
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+63) Java: Compiled or interpreted ?
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+1) Java is a hybrid language -> Both Compiled as well as Interpreted.
+2) byte code generated after compilation are platform independent means we can use this byte code any device irrecpective of Operating System.
+
+                Compiled(using javac)
+3)  Java File  --------------------->  Class File -------------------> Used by Interpreter
+                                      (byte code)
+    harry.java    javac harry.java     harry.class     java harry
+
+4) A JVM can be used to Interprete the bytecode
+5) Hence Java is a platform independent Language (Write Once run everywhere).
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Executing Java Program :-
+
+1) javac Harry.java       -----> Compiled (Create Byte-Code)
+2) java Harry             -----> Interpreted (Run .class file by Interpreter)
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------

@@ -1,0 +1,44 @@
+------------------------------------------------------------------------------------------------------------------------------------
+
+Generics Class :-
+
+    1) Generics means parameterized types.
+    2) Using Generics, it is possible to create classes that work with different data types.
+    3) An entity such as class, interface, or method that operates on a parameterized type is a generic entity.
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+Generic Method :-
+
+    1) Similar to the generics class, we can also create a method that can be used with any type of data.
+    2) Such a class is known as Generic Method.
+
+    public <T> void genericMethod(T data) {...}
+
+    4) Here, the type parameter <T> is inserted after the modifier public and before the return type void.
+    5) We can call the generics method by placing the actual type <String> and <Integer> inside the
+       bracket before the method name.
+
+    demo.<String>genericMethod("Java Programming");
+    demo.<Integer>genericMethod(25);
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+Bounded Generic Types :-
+
+    1) In general, the type parameter can accept any data types(except primitive types).
+    2) However, if we want to use generics for some specific types(such as accept data of number types)
+       only, then we can use bounded types.
+    3) In the case of bound types, we use the 'extends' keyword.
+
+    class genericsClass <T extends Number> {
+        public void display() {
+            System.out.println("This is a bounded type generics class.");
+        }
+    }
+
+    4) Here, GenericsClass is created with bounded type,
+    5) This means GenericsClass can only work with data types that are children of Number(Integer, Double,
+       and so on).
+
+------------------------------------------------------------------------------------------------------------------------------------

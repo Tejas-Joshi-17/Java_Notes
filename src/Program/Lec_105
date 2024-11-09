@@ -1,0 +1,19 @@
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+What is JavaDoc :-
+
+    1)  It is a tool that automatically generates standard documentation in HTML format from the Java source code.
+    2) This tool comes built-in with JDK (Java Development Kit).
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Steps to create documentation with JavaDoc in IntellijIdea :-
+
+    1)  Open your java program in IntellijIdea.
+    2)  Click on Tools and then select Generate JavaDoc.
+    3)  A pop window will open. Select the project and packages for which you want to create the JavaDoc.
+    4)  Select the classes for which you want to generate the documentation. By default, documentation will be created for all the classes.
+    5)  Select the location where you want to save your Javadoc by clicking on the Output directory.
+    6)  Click on Ok, and your documentation will be saved to your specified location.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

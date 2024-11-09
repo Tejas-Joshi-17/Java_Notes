@@ -1,0 +1,21 @@
+------------------------------------------------------------------------------------------------------------------------------------
+
+Resulting datatype after Arithmetic Operation :-
+
+1) byte + short           ---> integer
+2) short + integer        ---> integer
+3) long + float           ---> float
+4) integer + float        ---> float
+5) character + integer    ---> integer
+6) character + short      ---> integer
+7) long + double          ---> double
+8) float + double         ---> double
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+Increment & Decrement Operators :-
+    -- These will operates on all data types except boolean.
+    -- a++, ++a, a--, --a
+    -- datatype remains the same.
+
+------------------------------------------------------------------------------------------------------------------------------------

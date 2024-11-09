@@ -1,0 +1,378 @@
+-------------------------------------------- Standard Guidance ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+1) Use meaningful and descriptive names for variables, methods, classes, and packages.
+2) Class, Interface     :-  PascalCase convention
+3) Variable             :-  camelCase convention
+4) Method               :-  camelCase convention
+5) Constant             :-  UPPERCASE with underscores(_) separating words.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+1) Use names that clearly convey the purpose and intent of the variable, method, or class.
+2) Avoid single-letter variable names (except for loop counters in a short scope).
+3) Choose words that make the code self-documenting.
+
+E.X. :-     int numberOfItems;              // Good: Descriptive variable name
+            int n;                          // Avoid: Non-descriptive variable name
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Avoid Acronyms and Abbreviations :-
+
+    1) Avoid using acronyms or abbreviations unless they are widely accepted and well-known.
+    2) Prefer full and descriptive words over acronyms or abbreviations.
+    3) If an acronym is commonly accepted (e.g., URL, XML, HTTP), use it consistently.
+    4) Allowed Abbreviations :-
+       URL, XML, HTTP, tl, otl, x, y, z, jx, jy, msg, sp, rrn, txnId, ctx, tid, mid, sid, cfg, evt, sb, ss, ds.
+    5) List of Abbreviations to avoid :-
+            Avoid   Use
+            acc     account
+            mgr     manager
+            resp    response
+            req     request
+            serv    servlet
+            hdr     header
+            amt     amount
+            dt      date
+            tm      time
+
+E.X. :-     long employeeId;                // Good: Descriptive name without acronyms
+            long empId;                     // Avoid: Unclear acronym
+
+            package com.sarvatra.xml;                           // Good : well known Abbreviation
+            package com.sarvatra.extensibleMarkupLanguage;      // Avoid
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Avoid Misleading Names :-
+
+    1) Choose names that accurately represent the purpose of the entity.
+    2) Avoid names that may mislead developers.
+
+    E.X. :-     boolean isUserAuthenticated;            // Good: Descriptive and accurate variable name
+                boolean validateUser;                   // Avoid: Potentially misleading variable name
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Variables  :-  camelCase Convention
+Methods    :-  camelCase Convention
+
+    1)  Follow the camelCase convention for variables and methods.
+
+    2)  Descriptive and Meaningful :-
+            Choose variable names that are descriptive and convey the purpose of the variable.
+            E.X. :-    String userName;      // Good
+
+    3)  Avoid Single Letters :-
+            Avoid using single letters for variable names unless the variable represents a loop index.
+            E.X. :-    int x;                                   // Avoid
+                       for (int i = 0; i < 10; i++) {           // Good (loop index)
+                            // ...
+                       }
+
+    4)  Avoid Underscores :-
+            Do not use underscores to separate words in variable names. Stick to camel case.
+            E.X. :-    double totalPrice                        // Good
+                       double total_price;                      // Avoid
+
+                       int calculateTotalAmount() {             // Good: CamelCase for variables and methods
+                            // method implementation
+                       }
+
+                       int calculate_total_amount();            // Avoid: Incorrect capitalization
+
+    5)  Start with a Lowercase Letter :-
+            Variable names should start with a lowercase letter.
+            E.X. :-    int itemCount;                           // Good
+                       int ItemCount;                           // Avoid
+
+    6)  Constants in Uppercase :-
+            Constants (final variables) should be in Uppercase letters with underscores(_) separating words.
+            E.X. :-    final int maxValue = 100;                // Avoid
+                       final int MAX_VALUE = 100;               // Good
+
+    7)  Use Nouns for Object Instances :-
+            Object instances (e.g., instances of classes) should have names that represent nouns.
+            E.X. :-    Car startEngine = new Car();             // Avoid
+                       Car myCar = new Car();                   // Good
+
+    8)  Abbreviations :-
+            Avoid using abbreviations unless they are well-known and widely accepted.
+            E.X. :-    String custName;                         // Avoid
+                       String customerName;                     // Good
+
+    9)  Plural for Collections :-
+            Use plural names for collections or arrays to indicate that they represent multiple elements.
+            E.X. :-    List<String> studentList;                // AVoid
+                       List<String> students;                   // Good
+
+    10) Consistent Naming Across Scope :-
+            Maintain consistency in variable naming across different scopes, such as class level, method level, and loop indices.
+            E.X. :-    private int totalItems;                  // Class level
+                       private void calculateTotalItems() {     // Method level
+                            // Local variable
+                            int itemCount = 0;
+
+                            // ...
+                       }
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Package :-  Package helps to organize and structure code in a standardized way, making it more readable, maintainable, and scalable.
+
+    1)  Lowercase Letters :-
+            Package names should be in all lowercase letters. This enhances readability and consistency.
+            E.X. :-    package com.sarvatra.MyProject;             // Avoid
+                       package com.sarvatra.myproject;             // Good
+
+    2)  Unique and Descriptive :-
+            Package names should be unique and descriptive, providing meaningful information about the contents of the package.
+            E.X. :-    package com.sarvatra.payment;               // Good
+
+    3)  Avoid Single Character Names :-
+            Avoid using single-character names for packages. Use descriptive names that reflect the purpose or content of the package.
+            E.X. :-    package com.sarvatra.u;                     // Avoid
+                       package com.sarvatra.utilities;             // Good
+
+    4)  Avoid Java Keywords :-
+            Avoid using Java keywords as package names to prevent potential naming conflicts.
+            E.X. :-    package com.sarvatra.class;                 // Avoid
+                       package com.sarvatra.application;           // Good
+
+    5)  Use of Subpackages :-
+            Organize related packages into subpackages when it makes sense.
+            for example, if you have a package for utilities, you might have subpackages like com.sarvatra.utilities.logging and com.sarvatra.utilities.io .
+            E.X. :-    package com.sarvatra.utilities.logging;
+                       package com.sarvatra.utilities.io;
+
+    6)  No Underscores Hyphens :-
+            Package names should not contain underscores or hyphens. Use camelCase or capitalize separate words.
+            E.X. :-    package com.sarvatra.utility_library;          // Avoid
+                       package com.sarvatra.utilityLibrary;          // Good
+
+    7)  Short and Meaningful :-
+            Keep package names reasonably short and meaningful. Long and overly complex package names can be challenging to read
+            and maintain.
+            E.X. :-    package com.sarvatra.models.and.data.processing;      // Avoid
+                       package com.sarvatra.data;                            // Good
+
+    8)  Consistent Naming Across Projects :-
+            Maintain consistency in naming conventions across different projects or modules within your organization.
+            E.X. :-    package com.sarvatra.project1;                // Project 1
+                       package com.sarvatra.project2;                // Project 2
+
+    9)  Suggestions :-
+
+        +------------------------------+-----------------------------------+-----------------------------+
+        |          Format              |             Purpose               |          Example            |
+        +------------------------------+-----------------------------------+-----------------------------+
+        |  com.sarvatra.product        |  Product Specific Code            |   com.sarvatra.upi;         |
+        |                              |                                   |   com.sarvatra.rtsp;        |
+        |                              |                                   |   com.sarvatra.imps;        |
+        +------------------------------+-----------------------------------+-----------------------------+
+        |  com.sarvatra.product.bank   |  Product Specific Code for Bank   |   com.sarvatra.upi.icici;   |
+        |                              |                                   |   com.sarvatra.rtsp.icici;  |
+        |                              |                                   |   com.sarvatra.imps.icici;  |
+        +------------------------------+-----------------------------------+-----------------------------+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Class :-    1) Use PascalCase (TitleCase) for class names, starting with an uppercase letter.
+            2) Choose nouns or noun phrases for class names.
+
+            public class shoppingCart {         // Avoid: Incorrect capitalization
+                // class implementation
+            }
+
+            public class ShoppingCart {         // Good: PascalCase for class names
+                // class implementation
+            }
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Constants :-
+
+        1)  Constants should be in uppercase with underscores separating words.
+        2)  Use descriptive names for constants.
+            E.X. :-    public static final int MAX = 3;                 // Avoid: Non-descriptive constant name
+                       public static final int MAX_RETRY_COUNT = 3;     // Good: Uppercase with underscores for constants
+
+        3)  Avoid giving too big names :)
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Formatting :-
+
+        1)  Reformat Code using CTRL + ALT + SHIFT + L .
+        2)  Use consistent indentation to visually structure code blocks. Typically, use 4 spaces for each level of indentation.
+        3)  Use blank lines to separate logically related code blocks, methods, or classes.
+        4)  Avoid using wildcard imports ( import java.util.* ); explicitly import only the classes needed.
+        5)  While it's syntactically allowed to omit braces for single statements in control structures, it's better to use braces for better
+            readability and to avoid potential bugs.
+            E.X. :-    if (condition)                   // Avoid
+                            // single statement
+                       if (condition) {                 // Good
+                            // single statement
+                       }
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Documentation and Comments :-
+
+        1)  Write clear and concise comments.
+        2)  Provide Javadoc comments for classes, methods, and fields.
+        3)  Clearly document the purpose, parameters, and return values of methods.
+        4)  Use comments to explain complex logic, algorithms, or important decisions.
+        5)  Avoid unnecessary comments; write self-explanatory code whenever possible.
+        6)  For documentation comments, IntelliJ IDEA provides completion that is enabled by default. Type /** before a declaration and
+            press Enter . The IDE auto-completes the doc comment for you.
+        7)  Keep documentation up-to-date with code changes.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Exception Handling :-
+
+        -- Handle exceptions appropriately; do not ignore or swallow them without reason.
+        -- Log exceptions with sufficient information for debugging.
+        -- Favor specific exception types over generic ones.
+        -- Exception handling is a critical aspect of writing robust and reliable Java applications. Well-designed exception handling
+           contributes to code clarity, maintainability, and resilience. Here are best practices for exception handling in Java:
+
+
+        1)  Use Specific Exception Types :-
+                Catch specific exception types rather than using generic Exception classes. This allows for targeted handling and avoids catching
+                unexpected exceptions.
+                E.X. :-         try {                                              // Avoid
+                                    // code that may throw specific exception
+                                } catch (Exception e) {
+                                    // handle Generic Exception
+                                }
+
+                                try {                                               // Good
+                                    // code that may throw specific exception
+                                } catch (IOException e) {
+                                    // handle IOException
+                                } catch (SQLException e) {
+                                    // handle SQLException
+                                }
+
+        2)  Avoid Catching Throwable Exception :-
+                Avoid catching Throwable unless absolutely necessary. Catching Throwable may include errors that are not meant to be caught
+                (e.g., OutOfMemoryError ).
+                E.X. :-         try {                                               // Avoid
+                                    // code
+                                } catch (Throwable t) {
+                                    // handle all throwables
+                                }
+
+        3)  Fail Fast and Log :-
+                If an exception occurs and the application cannot recover, fail fast by letting the exception propagate. Log exceptions with sufficient
+                information for debugging. Include relevant details such as error messages, stack traces, and context.
+                E.X. :-        try {
+                                    // code that may throw an exception
+                               } catch (Exception e) {
+                                    logger.error("An error occurred: {}", e.getMessage());
+                                    throw new CustomException("Failed to process", e);
+                               }
+
+        4)  Handle Exceptions Appropriately :-
+                Handle exceptions at an appropriate level in the application. Consider whether an exception should be handled locally or propagated up
+                the call stack.
+                E.X. :-        try {                                        // Handle locally if possible
+                                    // code that may throw an exception
+                               } catch (FileNotFoundException e) {
+                                    // handle locally
+                               }
+
+                               throw new CustomException("Failed to process");      // Or propagate up if necessary
+
+        5)  Avoid Empty Catch Blocks :-
+                Avoid empty catch blocks as they make it difficult to diagnose and troubleshoot issues. Log exceptions or provide meaningful
+                handling within the catch block.
+                E.X. :-        try {                                    // Avoid
+                                    // code
+                               } catch (Exception e) {
+                                    // Empty catch block
+                               }
+
+                               try {                                    // Good
+                                    // code
+                               } catch (Exception e) {
+                                    logger.error("Failed to process - " + e );
+                               }
+
+        6)  Use Finally Sparingly :-
+                Use finally blocks sparingly, typically for resource cleanup (e.g., closing a file or releasing database connections).
+                Be cautions when including logic that could throw exceptions within a finally block.
+                E.X. :-        try {
+                                    // code
+                               } catch (Exception e) {
+                                    // handle exception
+                               } finally {
+                                    // cleanup code
+                               }
+
+        7)  Custom Exception Classes :-
+                Create custom exception classes to represent specific error conditions in your application.
+                Provide meaningful messages and context in custom exceptions.
+                E.X. :-        public class CustomException extends RuntimeException {
+                                    public CustomException(String message) {
+                                        super(message);
+                                    }
+                               }
+
+        8)  Use Checked Exceptions Appropriately :-
+                Prefer unchecked exceptions (those that extend RuntimeException ) for exceptional conditions that are beyond the control of the
+                calling code. Use checked exceptions sparingly and only for conditions that the calling code can reasonably be expected to handle.
+                E.X. :-        public class CustomException extends RuntimeException {        // Unchecked Exception
+                                    public CustomException(String message) {
+                                          super(message);
+                                    }
+                               }
+
+        9)  Exception Translation :-
+                Consider translating exceptions between layers of your application to maintain a clear separation of concerns.
+                Convert lower-level exceptions into higher-level exceptions that are more appropriate for the higher-level context.
+                E.X. :-        public void businessMethod() throws BusinessException {
+                                    try {
+                                        // lower-level code
+                                    } catch (LowerLevelException e) {
+                                        throw new BusinessException("Error in business logic", e);
+                                    }
+                               }
+
+        10) Use Java 7+ Try-with-Resources :-
+                When working with resources such as files or database connections, use the try-with-resources statement to automatically close them.
+                E.X. :-        try (BufferedReader br = new BufferedReader(new FileReader("file.txt"))) {
+                                    // code that uses br
+                               }
+
+        11) Avoid Swallowing Exceptions :-
+                Avoid situations where exceptions are caught and ignored without appropriate logging or handling.
+                If an exception cannot be handled, consider logging it for future diagnosis.
+                E.X. :-        try {
+                                    // code that may throw an exception
+                               } catch (Exception e) {
+                                    logger.warn("An exception occurred but was ignored: {}", e.getMessage());
+                               }
+
+        12) Use Logging Frameworks :-
+                Utilize logging frameworks like SLF4J to log exceptions.
+                Log enough information to diagnose the issue but avoid leaking sensitive information.
+                E.X. :-       import org.slf4j.Logger;
+                              import org.slf4j.LoggerFactory;
+
+                              private static final Logger logger = LoggerFactory.getLogger(MyClass.class);
+
+                              try {
+                                    // code
+                              } catch (Exception e) {
+                                    logger.error("An error occurred: {}", e.getMessage());
+                              }
+
+        Important :-          For jPOS application, use LogEvent and log it as "ERROR".
+                              (1) Avoid printStackTree
+                              (2) Avoid System.out.println
+                              (3) Avoid System.err.println
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
