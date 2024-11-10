@@ -5,7 +5,7 @@
 // ----------------------------------------------------------------------------------------------------------------------------------------
 
 
-package Program.Program;
+package Program;
 
 @FunctionalInterface            // Make Sure that interface contains only & only one abstract class
 interface Animal {
