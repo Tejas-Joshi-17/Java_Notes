@@ -1,0 +1,24 @@
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Java Generics :-
+
+1) The Java Generics helps us to deal with the compiler-time type-safety.
+2) With the help of the Generics, we can write a single method and call it with different argument types(integer, strings, etc.).
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Advantages of Generics :-
+
+1) Bugs can be Detected at Compile-Time :-
+        While developing any application or program, it is always better to catch the bug/problem at the
+        compile-time instead of runtime so that we can provide a smooth experience to the user.
+
+2) Type-Casting not Required :-
+        Let's suppose you created an ArrayList(without using Generics), and you want to store the
+        value at index 0 into an integer variable named "x." Are you allowed to do this in Java? The
+        answer is a big NO! This is because the ArrayList returns an object, but we're storing the
+        value in an integer variable.
+        In such cases, we need to type-cast the object into our desired data type. But, if we use Generics,
+        then there is no need to typecast.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
