@@ -1,0 +1,11 @@
+------------------------------------------------------------------------------------------------------------------------------------
+
+    56) Multiple Inheritance in Java :-
+
+
+ 1) Multiple Inheritance is not possible in Java means one class can't extend more than one class.
+ 2) Multiple Inheritance faces problems when there exist methods with same signature in both the super class which he extends.
+ 3) Due to such problem, Java does not support multiple inheritance directly but similar concept can be achieved using Interfaces.
+ 4) A class can implements multiple Interfaces and extend only one class at the same time.
+
+------------------------------------------------------------------------------------------------------------------------------------

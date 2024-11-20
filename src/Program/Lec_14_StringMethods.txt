@@ -1,0 +1,14 @@
+------------------------------------------------------------------------------------------------------------------------------------
+
+
+Escape Sequence Character :-
+    -- Sequence of Characters after backslash '\' is Escape Sequence Characters.
+    -- It consists of more than one character but represents one character when used within the string.
+
+1) \n   --> newline
+2) \t   --> tab
+3) \'   --> single-quote
+4) \\   --> backslash
+
+
+------------------------------------------------------------------------------------------------------------------------------------

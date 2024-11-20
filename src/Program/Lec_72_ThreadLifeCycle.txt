@@ -1,0 +1,14 @@
+-------------------------------------------------------------------------------------------------------------------------
+
+72) Java Thread Life-Cycle :-
+
+-------------------------------------------------------------------------------------------------------------------------
+
+
+-- 1] New           :-  Instance of Thread created which is not yet started by invoking start() method.
+-- 2] Runnable      :-  After invocation of start() method & before it is selected to be run by scheduler.
+-- 3] Running       :-  After Thread scheduler has selected it.
+-- 4] Non-Runnable  :-  Thread alive, not eligible to run.
+-- 5] Terminated    :-  run() method has exited.
+
+-------------------------------------------------------------------------------------------------------------------------
