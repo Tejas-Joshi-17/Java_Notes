@@ -32,16 +32,16 @@ public class Lec_26_IntroductionToArrays {
             System.out.println((i + 1) + "th Index Marks is :- " + Marks[i]);
         }
         // 1th Index Marks is :- 10
-        // 2th Index Marks is :- 0      <----- By-deafult value is :- 0
+        // 2th Index Marks is :- 0      <----- By-default value is :- 0
         // 3th Index Marks is :- 30
         // 1th Index Marks is :- 10
         // 2th Index Marks is :- 100
         // 3th Index Marks is :- 30
 
 
-        // int [] marks = new int [] ;  // must give dimesnsion
+        // int [] marks = new int [] ;  // must give dimension
         int[] marks1;
-        marks1 = new int[4];  // must give dimesnsion
+        marks1 = new int[4];  // must give dimension
         marks1[0] = 56;
         marks1[1] = 66;
         marks1[2] = 76;

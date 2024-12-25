@@ -2,8 +2,8 @@
 
 // 31) Functions/Methods in Java
 
-// -- 1) If we declare static function then we can access it directly by using Class_Name as well as by creating object.
-// -- 2) If we not declare function as static as need to create object of class to access it only.
+// -- 1) If we declare static function & static variable then we can access it directly by using Class_Name as well as by creating object.
+// -- 2) If we not declare function & variable as static as need to create object of class to access it only.
 
 // ------------------------------------------------------------------------------------------------------------------------------------------------------
 
