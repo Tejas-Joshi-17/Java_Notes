@@ -1,0 +1,7 @@
+static Keyword :-
+
+1) static variable & function is property of Class.
+2) We can access static variable & function by using className only in static function
+3) static variable can be accessed by className.variableName only in static method.
+4) static function can be accessed by className.functionName only in static method.
+5) static & non-static variable & function can be accessed by creating Object of Class.
