@@ -2,6 +2,7 @@ package StaticKeyword;
 
 public class ChildClass extends ParentClass {
     public static void main(String[] args) {
+
         System.out.println("Constant is :-" + ParentClass.NUM);
         ParentClass.greet();
         // ParentClass.good();   <-- Error - non-static method good() cannot be referenced from a static context
