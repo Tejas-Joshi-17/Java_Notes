@@ -13,7 +13,8 @@ public class ParentClass {
 
     public static void main(String[] args) {
         System.out.println("Constant is :- " + ParentClass.NUM);
-        ParentClass.greet();
+        ParentClass.greet();      // <--- As method in same class so need to user className to call method
+        greet();                  // <--- As method in same class so need to user className to call method
         // ParentClass.good();   <-- Error - non-static method good() cannot be referenced from a static context
 
         ParentClass parentClass = new ParentClass();
