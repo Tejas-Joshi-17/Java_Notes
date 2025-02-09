@@ -1,0 +1,11 @@
+static Keyword :-
+
+1) We can use static keyword with variables, methods & classes.
+2) Single Copy is created for static variable, methods & classes.
+3) We can create Inner class as static but not Outer class.
+4) static variable, methods & classes is property of Class.
+5) We can access static variables, methods & classes by using className only in static function
+6) static variables can be accessed by className.variableName only in static method.
+7) static methods can be accessed by className.functionName only in static method.
+8) To Call static methods from another static of Same Class no need to use className.
+9) static & non-static variables, methods & classes can be accessed by creating Object of Class.
