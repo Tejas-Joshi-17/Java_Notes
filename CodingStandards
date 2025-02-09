@@ -6,6 +6,7 @@
 4) Method               :-  camelCase convention
 5) Constant             :-  UPPERCASE with underscores(_) separating words.
 6) Package              :-  lowercase with separated by '.'.
+7) keyword              :-  Always in lowercase.
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
