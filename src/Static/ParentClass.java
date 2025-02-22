@@ -1,4 +1,4 @@
-package StaticKeyword;
+package Static;
 
 public class ParentClass {
     public static final int NUM = 10;

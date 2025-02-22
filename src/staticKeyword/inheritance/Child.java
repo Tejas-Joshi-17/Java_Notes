@@ -1,6 +1,6 @@
 // ------------------------------------------------------------------------------------------------------------------------------------------------
 
-package inheritance;
+package staticKeyword.inheritance;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -16,17 +16,17 @@ public class Child extends Parent {
 
     public static void main(String[] args) {
 
-        System.out.println("Child Number is :- " + Child.number);        // Child Number is :- 17
-        System.out.println("Parent Number is :- " + Parent.number);      // Parent Number is :- 10
+        logger.log(Level.INFO, "Child Number is :- {0}", Child.number);        // Child Number is :- 17
+        logger.log(Level.INFO, "Parent Number is :- {0}", Parent.number);      // Parent Number is :- 10
 
-        System.out.println("Child Test is :- " + Child.testNumber);      // Child Test is :- 20
-        System.out.println("Parent Test is :- " + Parent.testNumber);    // Child Test is :- 20
+        logger.log(Level.INFO, "Child Test is :- {0}", testNumber);      // Child Test is :- 20
+        logger.log(Level.INFO, "Parent Test is :- {0}", testNumber);    // Parent Test is :- 20
 
         Child.goodNight();          // Good Night From Child Class
         Parent.goodNight();         // Good Night From Parent Class
 
-        Child.goodMorning();        // Good Morning From Parent Class
-        Parent.goodMorning();       // Good Morning From Parent Class
+        goodMorning();        // Good Morning From Parent Class
+        goodMorning();       // Good Morning From Parent Class
 
     }
 }
