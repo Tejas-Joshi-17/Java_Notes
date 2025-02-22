@@ -1,3 +1,5 @@
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 static Keyword :-
 
 1) We can use static keyword with variables, methods & classes.
@@ -9,3 +11,5 @@ static Keyword :-
 7) static methods can be accessed by className.functionName only in static method.
 8) To Call static methods from another static of Same Class no need to use className.
 9) static & non-static variables, methods & classes can be accessed by creating Object of Class.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
