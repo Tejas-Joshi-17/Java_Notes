@@ -1,0 +1,10 @@
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+Notes :-
+
+    1) Static Methods & Static Variables are NOT Inherited. They belong to the class that defines them.
+    2) However, a child class can access static members of the parent class
+    3) If a child class defines a Static Method OR Static Variable with the same signature as the parent class,
+         it hides the parent’s static method instead of overriding it.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
