@@ -6,16 +6,22 @@
 // ------------------------------------------------------------------------------------------------------------------------------------
 
 
-package Important_Concepts;
+package important.concepts;
 
-public class final_in_Java {
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+public class FinalInJava {
+
+    protected static final Logger logger = Logger.getLogger(FinalInJava.class.getName());
+
     public static void main(String[] args) {
-        final int a = 34;
+        final int finalVariable = 34;
 
-        System.out.println("The Value of a is :- " + a);
-        // The Value of a is :- 34
+        logger.log(Level.INFO, "The Value of a is :- {0}", finalVariable);
+        // The Value of finalVariable is :- 34
 
-        // a = 50;   <---- Cannot change value of const variable.
+        // finalVariable = 50;   <---- Cannot change value of const variable.
     }
 }
 
