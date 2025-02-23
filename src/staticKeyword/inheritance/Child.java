@@ -16,17 +16,17 @@ public class Child extends Parent {
 
     public static void main(String[] args) {
 
-        logger.log(Level.INFO, "Child Number is :- {0}", Child.number);        // Child Number is :- 17
-        logger.log(Level.INFO, "Parent Number is :- {0}", Parent.number);      // Parent Number is :- 10
+        logger.log(Level.INFO, "Child Number is :- {0}", Child.number);       // Child Number is :- 17
+        logger.log(Level.INFO, "Child Number is :- {0}", Parent.number);      // Child Number is :- 10
 
-        logger.log(Level.INFO, "Child Test is :- {0}", testNumber);      // Child Test is :- 20
-        logger.log(Level.INFO, "Parent Test is :- {0}", testNumber);    // Parent Test is :- 20
+        logger.log(Level.INFO, "Child Test is :- {0}", testNumber);           // Child Test is :- 20
+        logger.log(Level.INFO, "Child Test is :- {0}", testNumber);           // Child Test is :- 20
 
         Child.goodNight();          // Good Night From Child Class
-        Parent.goodNight();         // Good Night From Parent Class
+        Parent.goodNight();         // Good Night From Child Class
 
-        goodMorning();        // Good Morning From Parent Class
-        goodMorning();       // Good Morning From Parent Class
+        goodMorning();              // Good Morning From Child Class
+        goodMorning();              // Good Morning From Child Class
 
     }
 }

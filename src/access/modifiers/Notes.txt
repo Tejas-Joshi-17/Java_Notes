@@ -1,0 +1,33 @@
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+Access Modifiers :-
+
+    +-----------------+------------+------------------+--------------------+-----------------------+-----------------------+
+    |    Access       |   Same     |   Same Package   |    Same Package    |    Different Package  |    Different Package  |
+    |    Modifiers    |   Class    |    Subclass      |    Non-Subclass    |       Subclass        |      Non-Subclass     |
+    +-----------------+------------+------------------+--------------------+-----------------------+-----------------------+
+    | Default         | Yes        |      Yes         |       Yes          |        No             | No                    |
+    | Private         | Yes        |      No          |       No           |        No             | No                    |
+    | Protected       | Yes        |      Yes         |       Yes          |        Yes            | No                    |
+    | Public          | Yes        |      Yes         |       Yes          |        Yes            | Yes                   |
+    +-----------------+------------+------------------+--------------------+-----------------------+-----------------------+
+
+    1) default (Package Public):-
+            - Accessible within the same class.
+            - Accessible within the same package (both subclass and non-subclass).
+            - Not accessible outside the package.
+
+    2) public :-
+            - Accessible from anywhere.
+
+    3) protected :-
+            - Accessible within the same class.
+            - Accessible within the same package (both subclass and non-subclass).
+            - Accessible in a different package only through inheritance (subclass).
+            - Not accessible in a different package if not a subclass.
+
+    4) private :-
+            - Accessible only within the same class.
+            - Not accessible anywhere else (even in subclasses).
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------

@@ -107,8 +107,8 @@ public class Lec_57_DefaultMethod {
         p.recordVideo();                            // Recording Videos ....!
         p.connectNetWork("VijayThirth");            // Connecting to ... VijayThirth
 
-        p.callNumber(8585);             // Calling.. 8585    <---- from Parent Class
-        p.pickCall();                               // Connecting..      <---- from Parent Class
+        p.callNumber(8585);             // Calling.. 8585    <---- from Child Class
+        p.pickCall();                               // Connecting..      <---- from Child Class
 
         p.Deletephoto();                            // Deleting the photos in Interface....!
         // <--- Default Mathod Runs
@@ -130,8 +130,8 @@ public class Lec_57_DefaultMethod {
         q.recordVideo();                          // Recording Videos ....!
         q.connectNetWork("VijayThirth");          // Connecting to ... VijayThirth
 
-        q.callNumber(8585);           // Calling.. 8585    <---- from Parent Class
-        q.pickCall();                             // Connecting..      <---- from Parent Class
+        q.callNumber(8585);           // Calling.. 8585    <---- from Child Class
+        q.pickCall();                             // Connecting..      <---- from Child Class
 
         q.Deletephoto();                          // Deleting the Photos in main class
 

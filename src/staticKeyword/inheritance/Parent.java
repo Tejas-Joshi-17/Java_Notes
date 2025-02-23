@@ -12,11 +12,11 @@ public class Parent {
     protected static int testNumber = 20;
 
     protected static void goodMorning() {
-        logger.info("Good Morning From Parent Class");
+        logger.info("Good Morning From Child Class");
     }
 
     protected static void goodNight() {
-        logger.info("Good Night From Parent Class");
+        logger.info("Good Night From Child Class");
     }
 
     public static void main(String[] args) {
@@ -24,8 +24,8 @@ public class Parent {
         logger.log(Level.INFO, "Number is :- {0}" , Parent.number);
         // Number is :- 121
 
-        Parent.goodMorning();       // Good Morning From Parent Class
-        Parent.goodNight();         // Good Night From Parent Class
+        Parent.goodMorning();       // Good Morning From Child Class
+        Parent.goodNight();         // Good Night From Child Class
     }
 
 }

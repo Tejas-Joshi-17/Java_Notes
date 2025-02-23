@@ -9,11 +9,11 @@ package Program;
 
 class Parent_Class481 {
     public void Hello() {
-        System.out.println("Hello from Parent Class");
+        System.out.println("Hello from Child Class");
     }
 
     public void Good_Morning() {
-        System.out.println("Good Morning from Parent Class");
+        System.out.println("Good Morning from Child Class");
     }
 }
 
@@ -38,17 +38,17 @@ public class Lec_48_MethodOverriding {
     public static void main(String[] args) {
 
         Parent_Class481 a = new Parent_Class481();
-        a.Hello();              // Hello from Parent Class
-        a.Good_Morning();       // Good Morning from Parent Class
+        a.Hello();              // Hello from Child Class
+        a.Good_Morning();       // Good Morning from Child Class
 
         Child_Class481 b = new Child_Class481();
-        b.Hello();              // Hello from Parent Class              <-------
-        b.Good_Morning();       // Good Morning from Parent Class
+        b.Hello();              // Hello from Child Class              <-------
+        b.Good_Morning();       // Good Morning from Child Class
         b.Good_Night();         // Good Night from Child Class
 
         Child_Class482 c = new Child_Class482();
         c.Hello();              // Hello from Child Class                <-------
-        c.Good_Morning();       // Good Morning from Parent Class
+        c.Good_Morning();       // Good Morning from Child Class
         c.Good_Night();         // Good Night from Child Class
 
     }

@@ -10,7 +10,7 @@ package Important_Concepts;
 public class LabeledBreak {
     public static void main(String[] args) {
 
-        lable1:     // <---- Label for Parent while Loop
+        lable1:     // <---- Label for Child while Loop
         for (int i = 0; i < 5; i++) {
             System.out.println("Value of i :- " + i);
             for (int j = 0; j < 5; j++) {
