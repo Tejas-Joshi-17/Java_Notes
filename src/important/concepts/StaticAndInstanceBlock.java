@@ -20,7 +20,7 @@ public class StaticAndInstanceBlock {
     // Instance Block       <------ Executed every time an object is created, before the constructor.
     {
         this.instanceVariable = 20;
-        logger.info("Setting Value of Static Variable Using Instance Block");
+        logger.info("Setting Value of Instance Variable Using Instance Block");
     }
 
     // Constructor
@@ -38,11 +38,11 @@ public class StaticAndInstanceBlock {
 
         // Setting Value of Static Variable Using Static Block
         // This is Start of Main Function
-        // Setting Value of Static Variable Using Instance Block
+        // Setting Value of Instance Variable Using Instance Block
         // This is Constructor
-        // Setting Value of Static Variable Using Instance Block
+        // Setting Value of Instance Variable Using Instance Block
         // This is Constructor
-        // Setting Value of Static Variable Using Instance Block
+        // Setting Value of Instance Variable Using Instance Block
         // This is Constructor
         // This is End of Main Function
         
