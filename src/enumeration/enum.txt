@@ -1,0 +1,62 @@
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+Enumeration OR enum :-
+
+    - A Java enumeration is a class type.
+    - Although we don't need to instantiate an enum using new, it has the same capabilities as other classes.
+    - Just like classes, you can give them constructors, add instance variables & methods and even implements interfaces
+    - Unlike classes, enumeration neither inherit other classes not get extended(i.e. become superclass)
+    - The main objective of an enum is to define our own datatypes (Enumerated Data Types).
+    - An enum is a special "class" that represents a group of constants (unchangeable variables, like final variables).
+    - To create an enum, use the enum keyword (instead of class or interface), and separate the constants with a comma.
+
+    Note :-
+
+        1) The first line inside the enum should be a list of constants and then other things like methods, variables, and constructors.
+        2) Constants must be in UPPERCASE.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+Declaration of enum in Java :-
+
+    1) Declaration outside the class
+    2) Declaration inside the class
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+Properties of Enum in Java :-
+
+    1) Class Type :-  Every enum is internally implemented using the 'class' type
+    2) Enum Constants :-  Each enum constant represents an object of type enum.
+    3) Switch Statements :-  Enum types can be used in 'switch' statements.
+    4) Implicit Modifiers :-  Every enum constant is implicitly public static final.
+            - Since it is static, it can be accessed using the enum name.
+            - Since it is final, enums cannot be extended.
+    5) Main Method :-  Enums can declare a main() method, allowing direct invocation from the command line.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+Enum and Inheritance :-
+
+    1) All enums implicitly extend java.lang.Enum class. As a class can only extend one parent in Java, an enum cannot extend anything else.
+    2) toString() method is overridden in java.lang.Enum class, which returns enum constant name.
+    3) enum can implement many interfaces.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+Enum and Constructors :-
+
+    1) Enum can have constructors :-
+        - In Java, an enum can contain a constructor.
+        - The constructor is called separately for each enum constant when the enum class is loaded.
+        - Enum constructors can be used to initialize specific values for each constant.
+
+    2) We can't explicitly create objects of an enum :-
+        - Unlike normal classes, we cannot use the 'new' keyword to instantiate an enum.
+        - Enum objects are created automatically when the enum class is loaded, and each enum constant is a singleton instance.
+
+    3) Enums can have fields, constructors, and methods like normal classes.
+    4) Java provides built-in methods like values() and valueOf()
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+

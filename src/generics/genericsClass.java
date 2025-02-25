@@ -1,6 +1,6 @@
 // ------------------------------------------------------------------------------------------------------------------------------------
 
-package Generics;
+package generics;
 
 public class genericsClass {
     public static void main(String[] args) {

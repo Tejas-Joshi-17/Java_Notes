@@ -1,29 +1,29 @@
 // ------------------------------------------------------------------------------------------------------------------------------------
 
-package Generics;
+package generics;
 
-public class boundedGenerics {
+public class BoundedGenerics {
 
     public static void main(String[] args) {
-        boundedGenerics a = new boundedGenerics();
-        a.<Integer>Good_Morning(12);     // class is :- java.lang.Integer
-        a.<Double>Good_Morning(23.12);   // class is :- java.lang.Double
+        BoundedGenerics a = new BoundedGenerics();
+        a.goodMorning(12);      // class is :- java.lang.Integer
+        a.goodMorning(23.12);   // class is :- java.lang.Double
 
-        Banana<Integer> b = new Banana<Integer>();
+        Banana<Integer> b = new Banana<>();
         b.milk(23);
         // Value is :- 23
         // Class is :- java.lang.Integer
 
-        Banana<Double> c = new Banana<Double>();
+        Banana<Double> c = new Banana<>();
         c.milk(23.12);
         // Value is :- 23.12
         // Class is :- java.lang.Double
 
     }
 
-    <E extends Number> void Good_Morning(E num) {
-        E a = num;
-        System.out.println("class is :- " + a.getClass().getName());
+    protected <T extends Number> void goodMorning(T num) {
+        T e = num;
+        System.out.println("class is :- " + e.getClass().getName());
     }
 
 }

@@ -1,17 +1,19 @@
 // ------------------------------------------------------------------------------------------------------------------------------------
 
-package Generics;
+package generics;
 
-public class genericMethod {
+import java.util.logging.Level;
+
+public class GenericMethod extends Apple<String> {
     public static void main(String[] args) {
 
-        Apple b = new Apple();
+        Apple<String> b = new Apple<>();
 
-        b.<String>Good_Morning("Tejas Joshi");
+        b.goodMorning("Tejas Joshi");
         // Good Morning :- Tejas Joshi
 
-        int ans = b.<Integer>Good_Night(17);
-        System.out.println("answer is :- " + ans);
+        int ans = b.goodNight(17);
+        new GenericMethod().logger.log(Level.INFO, "answer is :- {}" , ans);
         // answer is :- 23
 
     }

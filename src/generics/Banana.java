@@ -1,4 +1,4 @@
-package Generics;
+package generics;
 
 public class Banana<T extends Number> {
     private T number;
