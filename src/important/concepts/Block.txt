@@ -1,0 +1,17 @@
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+1) Static Block :-
+        - A static block (also known as a static initializer) is executed once when the class is loaded into memory.
+        - It is used to initialize static variables.
+        - It runs before the main method and before any instance of the class is created.
+        - Multiple static blocks are executed in order of their declaration.
+
+2) Instance Block :-
+        - An instance block (also called instance initializer) is executed every time an object is created, before the constructor.
+        - It is used to initialize instance variables.
+        - If there are multiple instance blocks, they execute in the order of declaration.
+
+3) constructor    :-  Runs when Object Created.
+                      Runs Everytime when object Created.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

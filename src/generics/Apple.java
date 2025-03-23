@@ -1,13 +1,20 @@
 // ------------------------------------------------------------------------------------------------------------------------------------
 
-package Generics;
+package generics;
 
-class Apple {
-    public <T> void Good_Morning(T data) {
-        System.out.println("Good Morning :- " + data);
+import java.util.logging.Level;
+
+class Apple<V> extends LoggingSupport<Apple> {
+
+    public Apple() {
+        super(Apple.class);
     }
 
-    public <K> int Good_Night(K data) {
+    public void goodMorning(V data) {
+        logger.log(Level.INFO, "Good Morning :- {0}" , data);
+    }
+
+    public <K> int goodNight(K data) {
         return 23;
     }
 }

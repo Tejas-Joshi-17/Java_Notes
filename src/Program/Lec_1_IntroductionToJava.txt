@@ -26,18 +26,18 @@ E.X. :- If you have a template "form" in which name,address,phone no. & age
 
 Note == You have to create the object of class in order to run the program
 
-But in that case, we had not created the function this is possbile because we
+But in that case, we had not created the function this is possible because we
 have used "static" keyword
 
 
 void main indicate that function doesn't return any value after calling it.
 
-"main" is thename of the function, when you start a program in the java then
+"main" is the name of the function, when you start a program in the java then
 the starting point will be "main" in this class
 
 Note == Your java program starts with main() function
 
-Here public is the acess modifier, public means your method of this class can be accessed from anywhere
+Here public is the access modifier, public means your method of this class can be accessed from anywhere
 
 static makes it possible for us to run these functions without creating an object of the class
 

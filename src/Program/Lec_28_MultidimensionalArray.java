@@ -30,7 +30,7 @@ public class Lec_28_MultidimensionalArray {
             for (int j = 0; j < marks1[i].length; j++) {
                 System.out.print(marks1[i][j] + " ");
             }
-            System.out.println("");
+            System.out.println();
         }
         //  1 2 3
         //  4 5 6
@@ -38,11 +38,11 @@ public class Lec_28_MultidimensionalArray {
 
         int[][] marks = {{1, 2, 3}, {4, 5, 6}};
 
-        for (int i = 0; i < marks.length; i++) {
-            for (int j = 0; j < marks[i].length; j++) {
-                System.out.print(marks[i][j] + " ");
+        for (int[] mark : marks) {
+            for (int i : mark) {
+                System.out.print(i + " ");
             }
-            System.out.println("");
+            System.out.println();
         }
         //  1 2 3
         //  4 5 6
@@ -65,9 +65,9 @@ public class Lec_28_MultidimensionalArray {
         }
         System.out.println();
 
-        for (int i = 0; i < matrix.length; i++) {
-            for (int j = 0; j < matrix[i].length; j++) {
-                System.out.print(matrix[i][j] + " ");
+        for (int[] ints : matrix) {
+            for (int anInt : ints) {
+                System.out.print(anInt + " ");
             }
             System.out.println();
         }

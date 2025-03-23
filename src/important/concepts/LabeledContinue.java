@@ -4,16 +4,22 @@
 
 // ------------------------------------------------------------------------------------------------------------------------------------
 
-package Important_Concepts;
+package important.concepts;
+
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class LabeledContinue {
+
+    private static final Logger logger = Logger.getLogger(LabeledContinue.class.getName());
+
     public static void main(String[] args) {
 
-        lable1:     // <---- Label for Parent while Loop
+        lable1:     // <---- Label for Child while Loop
         for (int i = 0; i < 3; i++) {
-            System.out.println("Value of i :- " + i);
+            logger.log(Level.INFO,"Value of i :- {0}", i);
             for (int j = 0; j < 3; j++) {
-                System.out.println("Value of j :- " + j);
+                logger.log(Level.INFO,"Value of j :- {0}", j);
                 if (j == 2) {
                     continue lable1;
                 }
