@@ -12,7 +12,7 @@ Access Modifiers :-
     | Public          | Yes        |      Yes         |       Yes          |        Yes            | Yes                   |
     +-----------------+------------+------------------+--------------------+-----------------------+-----------------------+
 
-    1) default (Package Public):-
+    1) default (Package-Private):-
             - Accessible within the same class.
             - Accessible within the same package (both subclass and non-subclass).
             - Not accessible outside the package.

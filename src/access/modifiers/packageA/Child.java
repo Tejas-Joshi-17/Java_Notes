@@ -1,3 +1,5 @@
+// ------------------------------------------------------------------------------------------------------------------------------------
+
 package access.modifiers.packageA;
 
 import java.util.logging.Logger;
@@ -13,7 +15,7 @@ public class Child extends Parent {
 
     public static void main(String[] args) {
 
-        Child child = new Child();
+        Child child = new Child();            // Same Package Subclass
         child.defaultChildNumber = 30;
         child.publicChildNumber = 30;
         child.protectedChildNumber = 30;
@@ -23,7 +25,7 @@ public class Child extends Parent {
         child.protectedParentNumber = 10;
         // child.privateParentNumber = 10;
 
-        Parent parent = new Parent();
+        Parent parent = new Parent();           // Same Package Non-Subclass
         parent.defaultParentNumber = 20;
         parent.publicParentNumber = 20;
         parent.protectedParentNumber = 20;
@@ -31,3 +33,5 @@ public class Child extends Parent {
 
     }
 }
+
+// ------------------------------------------------------------------------------------------------------------------------------------

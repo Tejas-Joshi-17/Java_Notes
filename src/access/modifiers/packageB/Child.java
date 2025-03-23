@@ -1,3 +1,5 @@
+// ------------------------------------------------------------------------------------------------------------------------------------
+
 package access.modifiers.packageB;
 
 import access.modifiers.packageA.Parent;
@@ -14,7 +16,7 @@ public class Child extends Parent {
 
     public static void main(String[] args) {
 
-        Child child = new Child();
+        Child child = new Child();                //  Different Package Subclass
         child.defaultChildNumber = 10;
         child.publicChildNumber = 10;
         child.protectedChildNumber = 10;
@@ -24,7 +26,7 @@ public class Child extends Parent {
         child.protectedParentNumber = 20;
         // child.privateParentNumber = 20;
 
-        Parent parent = new Parent();
+        Parent parent = new Parent();               // Different Package Non-Subclass
         // parent.defaultParentNumber = 10;
         parent.publicParentNumber = 10;
         // parent.protectedParentNumber = 10;
@@ -33,3 +35,5 @@ public class Child extends Parent {
     }
 
 }
+
+// ------------------------------------------------------------------------------------------------------------------------------------

@@ -1,3 +1,5 @@
+// ------------------------------------------------------------------------------------------------------------------------------------
+
 package access.modifiers.packageA;
 
 import java.util.logging.Logger;
@@ -13,19 +15,19 @@ public class Other {
 
     public static void main(String[] args) {
 
-        Other other = new Other();
+        Other other = new Other();                  // Same Class Object
         other.defaultOtherNumber = 10;
         other.publicOtherNumber = 10;
         other.protectedOtherNumber = 10;
         other.privateOtherNumber = 10;
 
-        Parent parent = new Parent();
+        Parent parent = new Parent();               // Same Package Non-Subclass
         parent.defaultParentNumber = 20;
         parent.publicParentNumber = 20;
         parent.protectedParentNumber = 20;
         // parent.privateParentNumber = 20;
 
-        Child child = new Child();
+        Child child = new Child();                  // Same Package Non-Subclass
         child.defaultChildNumber = 30;
         child.publicChildNumber = 30;
         child.protectedChildNumber = 30;
@@ -33,3 +35,5 @@ public class Other {
 
     }
 }
+
+// ------------------------------------------------------------------------------------------------------------------------------------
