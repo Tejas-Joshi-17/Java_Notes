@@ -11,7 +11,7 @@ class Apple<V> extends LoggingSupport<Apple> {
     }
 
     public void goodMorning(V data) {
-        logger.log(Level.INFO, "Good Morning :- {}" , data);
+        logger.log(Level.INFO, "Good Morning :- {0}" , data);
     }
 
     public <K> int goodNight(K data) {

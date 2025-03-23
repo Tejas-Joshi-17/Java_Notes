@@ -1,12 +1,15 @@
 package generics;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 public class Banana<T extends Number> {
-    private T number;
+
+    protected static final Logger logger = Logger.getLogger(Banana.class.getName());
 
     public T milk(T num) {
-        this.number = num;
-        System.out.println("Value is :- " + number);
-        System.out.println("class is :- " + number.getClass().getName());
-        return this.number;
+        logger.log(Level.INFO, "Value is :- {0}", num);
+        logger.log(Level.INFO, "class is :- {0}", num.getClass().getName());
+        return num;
     }
 }

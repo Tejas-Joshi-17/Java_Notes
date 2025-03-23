@@ -2,7 +2,11 @@
 
 package generics;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 public class BoundedGenerics {
+    protected static Logger logger = Logger.getLogger(BoundedGenerics.class.getName());
 
     public static void main(String[] args) {
         BoundedGenerics a = new BoundedGenerics();
@@ -22,8 +26,7 @@ public class BoundedGenerics {
     }
 
     protected <T extends Number> void goodMorning(T num) {
-        T e = num;
-        System.out.println("class is :- " + e.getClass().getName());
+        logger.log(Level.INFO, "class is :- {0}", num.getClass().getName());
     }
 
 }
