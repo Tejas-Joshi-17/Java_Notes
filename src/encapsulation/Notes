@@ -1,0 +1,22 @@
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+Java Encapsulation :-
+
+    1) Encapsulation refers to the bundling of fields and methods inside a single class.
+    2) It prevents outer classes from accessing and changing fields and methods of a class, This also helps to achieve data hiding.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+Data Hiding :-
+
+    1) Data Hiding is a way of restricting the access of our data members by hiding the implementation details.
+    2) Encapsulation also provides a way for data hiding.
+    3) We can use access modifiers to achieve data hiding.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+Note :-   1) People often consider encapsulation as data hiding, but that's not entirely true.
+          2) Encapsulation refers to the bundling of related fields and methods together. This can be used to achieve data hiding.
+          3) Encapsulation in itself is not data hiding.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------

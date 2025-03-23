@@ -1,0 +1,23 @@
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Abstract Class :-
+
+    1) The abstract class in Java cannot be instantiated (we cannot create objects of abstract class).
+    2) We use 'abstract' keyword to declare an abstract class.
+    3) An abstract class can have both regular methods(Concrete Method) & Abstract Method.
+    4) If a class contains at least one abstract method then class is becoming abstract class.
+    5) A method that doesn't have its body is known as an abstract method.
+    6) Though abstract classes cannot be instantiated, we can create subclasses from it.
+        We can then access members of the abstract class using the object of the subclass.
+    7) If the abstract class includes any abstract method, then all the child classes inherited from the abstract superclass must
+        provide the implementation of that abstract methods.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Java Abstraction :-
+
+    - Abstraction is an important concept of object-oriented programming that allows us to hide unnecessary details and only shows
+      the needed information.
+    - This allows us to manage complexity or hiding details with a simpler higher-level idea.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------

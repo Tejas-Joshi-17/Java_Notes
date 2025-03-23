@@ -3,23 +3,23 @@
 package generics;
 
 public class Student<T, K> {
-    private T Roll_No;
-    private K Name;
+    private T rollNo;
+    private K name;
 
-    public T getRoll_No() {
-        return this.Roll_No;
+    public T getRollNo() {
+        return this.rollNo;
     }
 
-    public void setRoll_No(T Roll_No) {
-        this.Roll_No = Roll_No;
+    public void setRollNo(T rollNo) {
+        this.rollNo = rollNo;
     }
 
     public K getName() {
-        return this.Name;
+        return this.name;
     }
 
-    public void setName(K Name) {
-        this.Name = Name;
+    public void setName(K name) {
+        this.name = name;
     }
 }
 

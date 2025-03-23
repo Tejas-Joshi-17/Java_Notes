@@ -1,4 +1,4 @@
-package StaticKeyword;
+package staticKeyword;
 
 
 import java.util.logging.Logger;

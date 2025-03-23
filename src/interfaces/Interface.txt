@@ -1,0 +1,28 @@
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Java Interfaces :-
+
+    1)  An interface is a fully-abstract class.
+    2)  It includes a group of abstract methods (methods without body).
+    3)  We use the 'interface' keyword to create an interface in Java.
+    4)  Like abstract class, we cannot create objects of interfaces.
+    5)  To use an interface, other classes must implements it.
+    6)  We use the 'implements' keyword to implement an interface.
+    7)  With Use of 'interface' we achieve Multiple-Inheritance in Java but with Abstract-Class we can't.
+    8)  All Methods in Interface are 'public' by-default.
+    9)  All Properties/Variables in Interface are 'public static final' by-default as so many classes implements interface.
+    10) We can have 'default' methods is interface.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Advantages of Java Interfaces :-
+
+    1) Similar to abstract classes, interface helps us to achieve abstraction in Java.
+    2) Interfaces are also used to achieve Multiple-Inheritance in Java.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Note :-   1) All Fields / variables in Interface are implicitly 'public static final', because so many classes implements interface, so they can't change value.
+          2) All Methods in Interface are implicitly 'public'.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------

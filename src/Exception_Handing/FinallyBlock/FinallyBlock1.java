@@ -2,18 +2,22 @@
 
 package Exception_Handing.FinallyBlock;
 
-public class finally_block_1 {
+import java.util.logging.Logger;
+
+public class FinallyBlock1 {
+    
+    protected static final Logger logger = Logger.getLogger(FinallyBlock1.class.getName());
 
     public static void firstFinallyBlock() {
-        System.out.println("Staring Program");
+        logger.info("Staring Program");
         try {
             int a = 34 / 0;
         } catch (Exception e) {
-            System.out.println(e.toString());
+            logger.info(e.toString());
         } finally {
-            System.out.println("Hello from finally Block");
+            logger.info("Hello from finally Block");
         }
-        System.out.println("Ending Program");
+        logger.info("Ending Program");
     }
 
     public static void main(String[] args) {

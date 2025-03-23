@@ -1,10 +1,12 @@
+// ------------------------------------------------------------------------------------------------------------------------------------
+
 package string;
 
 import java.util.logging.Logger;
 
 public class Basics1 {
 
-    private static Logger logger = Logger.getLogger(Basics1.class.getName());
+    private static final Logger logger = Logger.getLogger(Basics1.class.getName());
 
     public static void main(String[] args) {
 
@@ -40,3 +42,5 @@ public class Basics1 {
 
     }
 }
+
+// ------------------------------------------------------------------------------------------------------------------------------------

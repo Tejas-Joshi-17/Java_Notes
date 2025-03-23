@@ -1,20 +1,24 @@
 // ------------------------------------------------------------------------------------------------------------------------------------
 
-package Exception_Handing.FinallyBlock;
+package exceptions.handling.finallly.block;
 
-public class finally_block_3 {
+import java.util.logging.Logger;
+
+public class FinallyBlock3 {
+    
+    protected static final Logger logger = Logger.getLogger(FinallyBlock3.class.getName());
 
     public static void thirdFinallyBlock() {
-        System.out.println("Staring Program");
+        logger.info("Staring Program");
         try {
             int a = 34 / 23;
         } catch (Exception e) {
-            System.out.println(e.toString());
+            logger.info(e.toString());
         } finally {
             int sum = 100 / 0;
-            System.out.println("Hello from finally Block");
+            logger.info("Hello from finally Block");
         }
-        System.out.println("Ending Program");
+        logger.info("Ending Program");
     }
 
     public static void main(String[] args) {

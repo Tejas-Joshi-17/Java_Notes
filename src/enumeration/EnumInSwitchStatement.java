@@ -1,3 +1,5 @@
+// ------------------------------------------------------------------------------------------------------------------------------------
+
 package enumeration;
 
 import java.util.logging.Logger;
@@ -8,10 +10,10 @@ public class EnumInSwitchStatement {
         RED,
         GREEN,
         BLUE,
-        YELLOW;
+        YELLOW
     }
 
-    protected static final Logger logger = Logger.getLogger(EnumPropertyImplementation.class.getName());
+    protected static final Logger logger = Logger.getLogger(EnumInSwitchStatement.class.getName());
 
     public static void main(String[] args) {
 
@@ -27,6 +29,9 @@ public class EnumInSwitchStatement {
             case BLUE:
                 logger.info("Blue color observed");
                 break;
+            case YELLOW:
+                logger.info("Yellow color observed");
+                break;
             default:
                 logger.info("Other color observed");
         }
@@ -34,3 +39,5 @@ public class EnumInSwitchStatement {
 
     }
 }
+
+// ------------------------------------------------------------------------------------------------------------------------------------

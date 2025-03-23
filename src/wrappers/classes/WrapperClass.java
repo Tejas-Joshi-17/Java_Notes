@@ -5,9 +5,15 @@
 // ------------------------------------------------------------------------------------------------------------------------------------
 
 
-package wrapperClass;
+package wrappers.classes;
 
-public class Wrapper_Class {
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+public class WrapperClass {
+
+    protected static final Logger logger = Logger.getLogger(WrapperClass.class.getName());
+
     public static void main(String[] args) {
 
         // How to use Wrapper Classes
@@ -15,12 +21,12 @@ public class Wrapper_Class {
 
         // Auto-Boxing :-  primitive data-type -> Wrapper Class
         Integer b = 23;
-        System.out.println("The Value of b is :- " + (int) b);
+        logger.log(Level.INFO, "The Value of b is :- {0}", (int) b);
         // The Valiue of b is :- 23
 
         // Un-Boxing :-  Wrapper Class -> primitive data-type
         int c = b;
-        System.out.println("The Value of c is :- " + c);
+        logger.log(Level.INFO, "The Value of c is :- {0}", c);
         // The Value of c is :- 23;
 
     }
