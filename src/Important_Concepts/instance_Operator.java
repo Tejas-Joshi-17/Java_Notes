@@ -32,9 +32,9 @@ class Child extends Parent {
 public class instance_Operator {
     public static void main(String[] args) {
 
-        Parent p1 = new Parent();
-        System.out.println(p1 instanceof Parent);       // true
-        System.out.println(p1 instanceof Child);        // false
+        Parent parent = new Parent();
+        System.out.println(parent instanceof Parent);       // true
+        System.out.println(parent instanceof Child);        // false
 
         Parent p2 = new Child();
         System.out.println(p2 instanceof Parent);       // true
