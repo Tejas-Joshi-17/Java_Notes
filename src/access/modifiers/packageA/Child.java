@@ -16,20 +16,21 @@ public class Child extends Parent {
     public static void main(String[] args) {
 
         Child child = new Child();            // Same Package Subclass
-        child.defaultChildNumber = 30;
-        child.publicChildNumber = 30;
-        child.protectedChildNumber = 30;
-        child.privateChildNumber = 30;
-        child.defaultParentNumber = 10;
-        child.publicParentNumber = 10;
-        child.protectedParentNumber = 10;
-        // child.privateParentNumber = 10;
+        child.defaultChildNumber = 10;
+        child.publicChildNumber = 10;
+        child.protectedChildNumber = 10;
+        child.privateChildNumber = 10;
+
+        child.defaultParentNumber = 20;
+        child.publicParentNumber = 20;
+        child.protectedParentNumber = 20;
+        // child.privateParentNumber = 20;
 
         Parent parent = new Parent();           // Same Package Non-Subclass
-        parent.defaultParentNumber = 20;
-        parent.publicParentNumber = 20;
-        parent.protectedParentNumber = 20;
-        // parent.privateParentNumber = 20;
+        parent.defaultParentNumber = 30;
+        parent.publicParentNumber = 30;
+        parent.protectedParentNumber = 30;
+        // parent.privateParentNumber = 30;
 
     }
 }

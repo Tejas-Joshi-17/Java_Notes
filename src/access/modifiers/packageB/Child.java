@@ -16,11 +16,12 @@ public class Child extends Parent {
 
     public static void main(String[] args) {
 
-        Child child = new Child();                //  Different Package Subclass
+        Child child = new Child();                //  Same Class Object
         child.defaultChildNumber = 10;
         child.publicChildNumber = 10;
         child.protectedChildNumber = 10;
         child.privateChildNumber = 10;
+
         // child.defaultParentNumber = 20;
         child.publicParentNumber = 20;
         child.protectedParentNumber = 20;
