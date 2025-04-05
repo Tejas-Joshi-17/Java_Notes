@@ -9,7 +9,7 @@ interface Animal {
     public static final Logger logger = Logger.getLogger(Animal.class.getName());
     public static final String NAME = "Animal";
 
-    void eats();
+    public abstract void eats();
 
     default void run() {
         logger.info("Animal is Running");
@@ -17,7 +17,7 @@ interface Animal {
 }
 
 interface Cat extends Animal {
-    void bark();
+    public abstract void bark();
 
     default void laugh() {
         logger.info("Cat is Laughing");
@@ -28,7 +28,7 @@ interface Fish {
 
     public static final Logger logger = Logger.getLogger(Fish.class.getName());
 
-    void swim();
+    public abstract void swim();
 
     default void eating() {
         logger.info("Fish is Eating");

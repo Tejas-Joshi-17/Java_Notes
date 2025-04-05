@@ -1,4 +1,4 @@
-// ------------------------------------------------------------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 package abstracts.classes;
 
@@ -15,7 +15,7 @@ abstract class Vehicle {
     }
 }
 
-class Car extends Vehicle {
+abstract class Car extends Vehicle {
     void accelerate() {
         logger.info("Car is Accelerating");
     }
@@ -23,6 +23,16 @@ class Car extends Vehicle {
     @Override
     void breaks() {
         logger.info("Car's breaks is applied");
+    }
+
+    abstract void run();
+}
+
+class SuperCar extends Car {
+
+    @Override
+    void run() {
+        logger.info("Super-Car is Running");
     }
 }
 
@@ -40,15 +50,16 @@ public class LearnAbstractClass {
 
     public static void main(String[] args) {
 
-        Car car = new Car();
+        Car car = new SuperCar();
         car.accelerate();       // Car is Accelerating
-        car.breaks();          // Car's breaks is applied
+        car.breaks();           // Car's breaks is applied
+        car.run();              // Super-Car is Running
 
         BiCycle biCycle = new BiCycle();
         biCycle.accelerate();   // BiCycle is Accelerating
-        biCycle.breaks();      // Vehicle's breaks are applied
+        biCycle.breaks();       // Vehicle's breaks are applied
 
     }
 }
 
-// ------------------------------------------------------------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------------------------------------------------------------------------------------

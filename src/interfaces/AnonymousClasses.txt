@@ -1,0 +1,14 @@
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Anonymous Classes in Java :-
+
+    1) In Java, a class can contain another class known as nested class.
+    2) It's possible to create a nested class without giving any name.
+    3) A nested class that doesn't have any name is known as an anonymous class.
+    4) An Anonymous Class usually extends subClasses or implements interfaces.
+        Type can be :-
+            a) A SuperClass that an anonymous class extending SubClass
+            b) An Interface that an anonymous class implements interface
+    5) Anonymous Class Object cannot have extra methods added to it.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------

@@ -9,7 +9,7 @@ Java Interfaces :-
     5)  To use an interface, other classes must implements it.
     6)  We use the 'implements' keyword to implement an interface.
     7)  With Use of 'interface' we achieve Multiple-Inheritance in Java but with Abstract-Class we can't.
-    8)  All Methods in Interface are 'public' by-default.
+    8)  All Methods in Interface are 'public abstract' by-default No need to add 'abstract' keyword.
     9)  All Properties/Variables in Interface are 'public static final' by-default as so many classes implements interface.
     10) We can have 'default' methods is interface.
 
@@ -23,6 +23,15 @@ Advantages of Java Interfaces :-
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Note :-   1) All Fields / variables in Interface are implicitly 'public static final', because so many classes implements interface, so they can't change value.
-          2) All Methods in Interface are implicitly 'public'.
+          2) All Methods in Interface are implicitly 'public abstract' So No need to add 'abstract' keyword.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Why Interface have 'default' method :-
+
+    Let's Assume 'Animal' Class is implemented by 1000 Classes
+    If we add any methods in 'Animal' Interface, then In all 1000 Classes we have implement that method
+    To avoid this Error-Occurring situation we have default method with definition
+    If any class wants to override that method they can do it.
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------

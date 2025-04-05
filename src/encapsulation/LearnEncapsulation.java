@@ -1,4 +1,4 @@
-// ------------------------------------------------------------------------------------------------------------------------------------
+// ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 package encapsulation;
 
@@ -19,7 +19,7 @@ class Person {
     }
 
     public int getAge() {
-        if(canBeAccessed) {
+        if(canBeAccessed && age > 0) {
             return this.age;
         }
         return -1;
@@ -34,13 +34,21 @@ public class LearnEncapsulation {
 
     public static void main(String[] args) {
 
-        Person person = new Person();
-        // person.age = 10;
-        person.setAge(10);
+        Person person1 = new Person();
+        // person.age = 10;      <----- 'age' has private access in 'encapsulation.Person'
+        person1.setAge(10);
 
-        logger.log(Level.INFO, "Person Age is :- {0}", person.getAge());
-        // Person Age is :- -1
+        logger.log(Level.INFO, "Person-1 Age is :- {0}", person1.getAge());
+        // Person-1 Age is :- -1
+
+        Person person2 = new Person();
+        // person2.age = -45;      <----- 'age' has private access in 'encapsulation.Person'
+        person2.setAge(-45);
+
+        logger.log(Level.INFO, "Person-2 Age is :- {0}", person2.getAge());
+        // Person-2 Age is :- -1
+
     }
 }
 
-// ------------------------------------------------------------------------------------------------------------------------------------
+// ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------

@@ -1,0 +1,28 @@
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Functional Interfaces :-
+
+    1) An interface that contains exactly One Abstract method is known as a 'Functional Interface'
+    2) Functional Interfaces introduced in Java-8 allows us to use a 'lambda expression' to initiate the interface's method & avoid using lengthy codes for the anonymous class implementation
+    3) Use '@FunctionInterface()' to denotes it as Functional Interface.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Lambda Expression :-
+
+    (int x) -> x+1                 // Single declared-type argument
+    (int x) -> { return x+1; }     // Same as above
+
+    (x) -> x+1                     // Single Inferred-type argument, Same as bellow
+    x -> x+1                       // Parenthesis optional for single inferred-type case
+
+    (String s) -> s.length()       // Single declared-type argument
+    s -> s.length()                // Single declared-type argument
+
+    (Thread t) -> { t.start(); }   // Single declared-type argument
+    t -> { t.start(); }            // Single declared-type argument
+
+    (int x, int y) -> x+y          // Multiple declared-type parenthesis
+    (x, y) -> x+y                 // Multiple inferred-type parenthesis
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
