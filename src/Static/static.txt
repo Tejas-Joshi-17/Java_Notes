@@ -2,8 +2,8 @@
 
 The static Keyword :-
 
-    1) If we want to access class members without creating an instance of the class, we need to declare the class members static.
-    2) Static Variables & Methods can be accessed be calling the class name of the class.
+    1) If we want to access class members without creating an instance of the class, we need to declare the class members(variables & methods) as static.
+    2) Static Variables & Methods can be accessed by calling the class name of the class.
     3) There is no need to create an instance of the class for accessing the static variable & methods because they are shared among all the class instances.
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -14,8 +14,9 @@ Static Variable :-
     2) Because, It is class-level variable, memory allocation of such variables only happens once when the class is loaded in the memory.
     3) If an object modifies the value of a static variable, the change is reflected across all objects.
     4) Static Variables can be used in any type of methods: static or non-static
-    5) We can't access non-static methods from static methods.
-    6) Non-static variables cannot be used inside static methods, It will throw a compile-time error.
+    5) Non-static variables cannot be accessed inside static methods, It will throw a compile-time error.
+    6) Non-static variables can be access only in Non-Static Method.
+    7) make static variable as 'final' so no one can change its value.
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -24,7 +25,9 @@ Static Methods :-
     1) The static members & methods belongs to the class rather than the instance of the class.
     2) When the implementation of the particular method is not dependent on the instance variable & methods, In this case, we can make that method to be static.
     3) They are accessed by the name of the class.
-    4) The keyword such as 'this' and 'super' are not used in the body of the static method.
-    5) The modification of the static field value is allowed but not recommended as it reflects change in all instances of the class.
+    4) We can access Static Methods from Non-Static Methods.
+    5) We can't access Non-Static Methods from Static Methods.
+    6) The keyword such as 'this' and 'super' are not used in the body of the static method.
+    7) The modification of the static field value is allowed but not recommended as it reflects change in all instances of the class.
     
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
