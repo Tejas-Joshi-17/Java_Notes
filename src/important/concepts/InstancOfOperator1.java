@@ -25,21 +25,21 @@ public class InstancOfOperator1 {
 
         ReqPay reqPay = new ReqPay();
 
-        if(reqPay instanceof ReqPay reqPay1) {                  // <---- Always true i.e. Giving Warning, please Ignore
-            parseReqPay(reqPay1);
-        }
+        // if(reqPay instanceof ReqPay reqPay1) {                  // <---- Always true i.e. Giving Warning, please Ignore
+            parseReqPay((ReqPay) reqPay);
+        //}
 
-        if(reqPay instanceof PayerAndPayer payerAndPayer) {     // <---- Always true i.e. Giving Warning, please Ignore
-            parsePayerAndPayer(payerAndPayer);
-        }
+        // if(reqPay instanceof PayerAndPayer payerAndPayer) {     // <---- Always true i.e. Giving Warning, please Ignore
+            parsePayerAndPayer((PayerAndPayer) reqPay);
+        // }
 
-        if(reqPay instanceof Txn txn) {                         // <---- Always true i.e. Giving Warning, please Ignore
-            parseTxn(txn);
-        }
+        // if(reqPay instanceof Txn txn) {                         // <---- Always true i.e. Giving Warning, please Ignore
+            parseTxn((Txn) reqPay);
+        // }
 
-        if(reqPay instanceof Head head) {                       // <---- Always true i.e. Giving Warning, please Ignore
-            parseHead(head);
-        }
+        // if(reqPay instanceof Head head) {                       // <---- Always true i.e. Giving Warning, please Ignore
+            parseHead((Head) reqPay);
+        // }
     }
 
     static void parseReqPay(ReqPay reqPay) {

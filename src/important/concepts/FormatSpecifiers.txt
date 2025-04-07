@@ -1,0 +1,27 @@
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Format Specifiers :-
+
+    (String & Character)
+        1) String                          :-     %s
+        2) Character                       :-     %c
+
+    (Integer Types)
+        1) Decimal (base 10)               :-     %d
+        2) Octal (base 8)                  :-     %o
+        3) Hax (lowercase)                 :-     %x
+        4) Hax (uppercase)                 :-     %X
+
+    (Floating Point)
+        1) Decimal Float                   :-     %f
+        2) Scientific Notation             :-     %e
+        3) Scientific (uppercase)          :-     %E
+        4) Shorter of %f or %e             :-     %g
+        5) Hex float (advanced)            :-     %a
+
+    (General / Miscellaneous)
+        1) Boolean                         :-     %b
+        2) Platform-Independent newline    :-     %n
+        3) Literal '%'                     :-     %%
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
