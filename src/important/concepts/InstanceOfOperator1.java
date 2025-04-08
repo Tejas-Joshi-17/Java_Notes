@@ -19,7 +19,7 @@ class ReqPay extends PayerAndPayer {
     protected String reqPay;
 }
 
-public class InstancOfOperator1 {
+public class InstanceOfOperator1 {
 
     public static void main(String[] args) {
 
