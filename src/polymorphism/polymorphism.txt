@@ -1,0 +1,15 @@
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Java Polymorphism :-
+
+    1) Polymorphism allows us to perform a single action in different ways.
+    2) In other words, polymorphism allow you to define one interface and have multiple implementation.
+    3) The word 'poly' means many and 'morphs' means forms, So it means many forms.
+
+    There are two types of Polymorphism :-
+
+        a) Compile-time Polymorphism :-    Method Overloading
+
+        b) Runtime Polymorphism  :-  Method Overriding
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
