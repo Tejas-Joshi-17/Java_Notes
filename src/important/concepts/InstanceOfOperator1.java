@@ -18,12 +18,12 @@ class Txn extends Head{
     protected String txn;
 }
 
-class PayerAndPayer extends Txn {
+class PayerAndPayee extends Txn {
     protected String payer;
     protected String payee;
 }
 
-class ReqPay extends PayerAndPayer {
+class ReqPay extends PayerAndPayee {
     protected String reqPay;
 }
 
@@ -35,10 +35,9 @@ public class InstanceOfOperator1 {
 
         // if(reqPay instanceof ReqPay reqPay1) {                  // <---- Always true i.e. Giving Warning, please Ignore
             parseReqPay((ReqPay) reqPay);
-        //}
-
-        // if(reqPay instanceof PayerAndPayer payerAndPayer) {     // <---- Always true i.e. Giving Warning, please Ignore
-            parsePayerAndPayer((PayerAndPayer) reqPay);
+        //}p
+        // if(reqPay instanceof PayerAndPayee payerAndPayee) {     // <---- Always true i.e. Giving Warning, please Ignore
+            parsePayerAndPayee((PayerAndPayee) reqPay);
         // }
 
         // if(reqPay instanceof Txn txn) {                         // <---- Always true i.e. Giving Warning, please Ignore
@@ -58,12 +57,12 @@ public class InstanceOfOperator1 {
         reqPay.reqPay = "REQ_PAY";
     }
 
-    static void parsePayerAndPayer(PayerAndPayer payerAndPayer) {
-        payerAndPayer.head = "HEAD";
-        payerAndPayer.txn = "TXN";
-        payerAndPayer.payer = "PAYER";
-        payerAndPayer.payee = "PAYEE";
-        // payerAndPayer.reqPay = "REQ_PAY";       <------ Cannot resolve symbol 'reqPay'
+    static void parsePayerAndPayee(PayerAndPayee payerAndPayee) {
+        payerAndPayee.head = "HEAD";
+        payerAndPayee.txn = "TXN";
+        payerAndPayee.payer = "PAYER";
+        payerAndPayee.payee = "PAYEE";
+        // payerAndPayee.reqPay = "REQ_PAY";       <------ Cannot resolve symbol 'reqPay'
     }
 
     static void parseTxn(Txn txn) {
