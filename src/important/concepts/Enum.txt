@@ -1,0 +1,134 @@
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Enum (Enumeration)  :-
+    1) An enum is a special type that represents a group of constants (unchangeable values).
+    2) It is not required to use uppercase, but often considered as good practice.
+    3) There can be variables & methods in enum but first item must be constant
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+public enum Days {
+    SUNDAY,
+    MONDAY,
+    TUESDAY,
+    WEDNESDAY,
+    THURSDAY,
+    FRIDAY,
+    SATURDAY;
+
+    public String displayDay() {
+        return "Today is :- " + this.name();
+    }
+}
+        1) All SUNDAY, MONDAY, etc. are static final instances of 'Day' class extending 'Enum' class
+                         Becomes
+                            ↓
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+public final class Day extends java.lang.Enum<Days> {
+    public static final Day SUNDAY = new Day("SUNDAY", 0);
+    public static final Day MONDAY = new Day("MONDAY", 1);
+    public static final Day TUESDAY = new Day("TUESDAY", 2);
+    public static final Day WEDNESDAY = new Day("WEDNESDAY", 3);
+    public static final Day THURSDAY = new Day("THURSDAY", 4);
+    public static final Day FRIDAY = new Day("FRIDAY", 5);
+    public static final Day SATURDAY = new Day("SATURDAY", 6);
+
+    private static final Day[] values = { SUNDAY, MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY };
+
+    private Day(String name, int ordinal) {
+        super(name, ordinal);
+    }
+
+    public String displayDay() {
+        return "Today is :- " + this.name();
+    }
+
+    public static Day[] values() {
+        return VALUES.clone();
+    }
+
+    public static Day valueOf(String name) {
+        for (Day day : VALUES) {
+            if( day.name().equals(name)) {
+                return day;
+            }
+        }
+        throw new IllegalArgumentException("No enum constant " + name);
+    }
+}
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+public enum Days {
+    SUNDAY("Sun"),
+    MONDAY("Mon"),
+    TUESDAY("Tues"),
+    WEDNESDAY("Wed"),
+    THURSDAY("thurs"),
+    FRIDAY("Fri"),
+    SATURDAY("Sat");
+
+    private final String shortName;
+
+    private Days(String shortName) {
+        this.shortName = shortName;
+    }
+
+    public String getShortName() {
+        return this.shortName;
+    }
+
+    public String displayDay() {
+        return "Today is :- " + this.name();
+    }
+}
+        1) All SUNDAY, MONDAY, etc. are static final instances of 'Day' class extending 'Enum' class
+                         Becomes
+                            ↓
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+public final class Days extends Enum<Days> {
+    public static final Days SUNDAY = new Days("SUNDAY", 0, "Sun");
+    public static final Days MONDAY = new Days("MONDAY", 1, "Mon");
+    public static final Days TUESDAY = new Days("TUESDAY", 2, "Tues");
+    public static final Days WEDNESDAY = new Days("WEDNESDAY", 3, "Wed");
+    public static final Days THURSDAY = new Days("THURSDAY", 4, "Thurs");
+    public static final Days FRIDAY = new Days("FRIDAY", 5, "Fri");
+    public static final Days SATURDAY = new Days("SATURDAY", 6, "Sut");
+
+    private static final Days[] ENUM$VALUES = {
+        SUNDAY, MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY
+    };
+
+    private final String shortName;
+
+    private Days(String name, int ordinal, String shortName) {
+        super(name, ordinal);
+        this.shortName = shortName;
+    }
+
+    public String getShortName() {
+        return this.shortName;
+    }
+
+    public String displayDay() {
+        return "Today is :- " + this.name();
+    }
+
+    public static Days[] values() {
+        return ENUM$VALUES.clone();
+    }
+
+    public static Days valueOf(String name) {
+        for (Days d : ENUM$VALUES) {
+            if (d.name().equals(name)) return d;
+        }
+        throw new IllegalArgumentException("No enum constant: " + name);
+    }
+}
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
