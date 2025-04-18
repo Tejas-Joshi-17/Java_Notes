@@ -1,0 +1,274 @@
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Inner Class :-
+
+    1) In Java, it is also possible to nest classes (a class within a class or interface).
+    2) The purpose of nested classes is to group classes that belong together, which makes your code more readable and maintainable.
+    3) We use inner classes to logically group classes and interfaces in one place to be more readable and maintainable.
+    4) Additionally, it can access all the members of the outer class, including private data members and methods
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Advantages of Inner Classes :-
+
+    1) Nested classes represent a particular type of relationship that is it can access all the members (data members and methods) of the outer class, including private.
+    2) Nested classes are used to develop more readable and maintainable code because it logically group classes and interfaces in one place only.
+    3) Code Optimization: It requires less code to write.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Types of Inner Class :-
+
+    1) There are two types of nested classes non-static and static nested classes.
+    2) The non-static nested classes are also known as inner classes.
+
+    3) Non-static nested class (inner class) :-
+        a) Member Inner Class    :-  A class created within class and outside method.
+        b) Anonymous Inner Class :-  A class created for implementing an interface or extending class.
+                                     The Java compiler decides its name.
+        c) Local Inner Class     :-  A class was created within the method.
+
+    4) Static Nested Class
+        a) Static Nested Class   :-  A static class was created within the class.
+        b) Nested Interface      :-  An interface created within class or interface.
+
+    1) Member Inner Class
+    2) Static Nested Class
+    3) Local Inner Class
+    4) Anonymous Inner Class
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+1.a) Member Inner Class :-
+
+    a) A non-static class that is created inside a class but outside a method is called member inner class.
+    b) It is also known as a regular inner class.
+    c) It can be declared with access modifiers like public, default, private, and protected.
+
+    How to instantiate Member Inner Class :-
+        a) An object or instance of a member's inner class always exists within an object of its outer class.
+        b) The new operator is used to create the object of member inner class with slightly different syntax.
+        Example :-  OuterClass.new InnerClass();
+
+    class OuterClass {
+        private int data = 30;
+
+        class InnerClass {
+            void msg() {
+                System.out.println("data is :- {]", data);
+            }
+        }
+
+        public static void main(String[] args) {
+            OuterClass outerClass = new OuterClass();
+            OuterClass.InnerClass innerClass = outerClass.new InnerClass();
+            innerClass.msg();
+        }
+    }
+
+    Output :-  data is :- 30
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+1.b) Anonymous Inner Class :-
+
+        - Java anonymous inner class is an inner class without a name and for which only a single object is created..
+        - An anonymous inner class can be useful when making an instance of an object with certain "extras" such as overloading methods of a class or interface, without having to actually subclass a class.
+        - In simple words, a class that has no name is known as an anonymous inner class in Java.
+        - It should be used if you have to override a method of class or interface.
+
+        Anonymous Inner Class can be created on 2 ways :-
+            a) class (may be abstract or concrete)
+            b) interface
+
+        a) class (may be abstract or concrete) :-
+
+            ----------------------------------------------
+            abstract class Person {
+                abstract void eat();
+            }
+
+            class OuterClass {
+                public static void main(String[] args) {
+                    Person person = new Person() {              <---- Anonymous Inner Class
+                        void eat() {
+                            logger.info("Nice Fruits");
+                        }
+                    }
+                }
+            }
+            ---------------------------------------------
+            class Person {
+                void eat() {
+                    logger.info("This is Fruit");
+                }
+            }
+
+            class OuterClass {
+                public static void main(String[] args) {
+                    Person person = new Person() {              <---- Anonymous Inner Class
+                        &Override
+                        void eat() {
+                            logger.info("Nice Fruits");
+                        }
+                    }
+                }
+            }
+            ---------------------------------------------
+
+        b) interface :-
+
+            interface Eatable {
+                void eat();
+            }
+
+            class OuterClass {
+                public static void main(String[] args) {
+                    Eatable eatable = new Eatable() {             <---- Anonymous Inner Class
+                        void eat() {
+                            logger.info("Nice Fruits");
+                        }
+                    }
+                }
+            }
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+1.c) Local Inner Class :-
+
+    - A class i.e., created inside a method, is called local inner class in java.
+    - Local Inner Classes are the inner classes that are defined inside a block. Generally, this block is a method body. Sometimes this block can be a for loop, or an if clause.
+    - Local Inner classes are not a member of any enclosing classes. They belong to the block they are defined within, due to which local inner classes cannot have any access modifiers associated with them, However, they can be marked as final or abstract.
+    - These classes have access to the fields of the class enclosing it.
+    - If you want to invoke the methods of the local inner class, you must instantiate this class inside the method.
+
+    Rules for Local Inner Class :-
+        a) Local inner class cannot be invoked from outside the method.
+
+    class OuterClass {
+        private int data = 30;
+
+        void display() {
+            int value = 50;
+
+            class InnerClass {
+                void msg() {
+                    logger.info("Value is :- {}", value);
+                }
+            }
+
+            InnerClass innerClass = new InnerClass();
+            innerClass.msg();
+        }
+
+        public static void main(String[] args) {
+            OuterClass outerClass = new OuterClass();
+            outerClass.display();
+        }
+
+    }
+
+    // Output :- Value is :-  Value is :- 50
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+2.a) static nested class :-
+
+    - A static class is a class that is created inside a class, is called a static nested class in Java.
+    - It cannot access non-static data members and methods.
+    - It can be accessed by Outer Class Name.
+    - It can access static data members of the outer class, including private.
+
+    class OuterClass {
+        static int data = 30;
+
+        static class InnerClass {
+            void msg() {
+                logger.info("Data is :- {}", data);
+            }
+        }
+
+        public static void main(String[] args) {
+            OuterClass.InnerClass innerClass = new OuterClass.InnerClass();
+            innerClass.msg();
+        }
+    }
+
+    // Output :- Data is :- 30
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+2.b) nested interface :-
+
+    - An interface, i.e., declared within another interface or class, is known as a nested interface.
+    - The nested interfaces are used to group related interfaces so that they can be easy to maintain
+    - The nested interface must be referred to by the outer interface or class. It can't be accessed directly..
+
+    Note :-
+        1) No need to add 'static' keyword as inner interface is status by-default
+        2) The nested interface must be public if it is declared inside the interface, but it can have any access modifier if declared within the class.
+        3) Nested Interfaces are declared static
+
+        class/interface ClassName/InterfaceName{
+
+             interface NesterInterfaceName{
+                //
+             }
+        }
+
+
+    a) Example of Nested Interface which is declared within the class
+
+    class OuterClass {
+        static interface InnerInterface {           <--- No Need to add 'static', by-default it is 'static'
+            void msg();
+        }
+    }
+
+    class Main implements OuterClass.InnerInterface {
+
+        public void msg() {
+            logger.info("Hello Nested Interface");
+        }
+
+        public static void main(String[] args) {
+            OuterClass.InnerInterface innerInterface = new Main();
+            innerInterface.msg();
+        }
+
+    }
+    // Output :- Hello Nested Interface
+
+
+    b) Example of Nested Interface which is declared within the Interface
+
+    interface OuterInterface {
+        void show();
+
+        static interface InnerInterface {           <--- No Need to add 'static', by-default it is 'static'
+            void msg();
+        }
+    }
+
+    class Main implements OuterInterface.InnerInterface {
+        public void msg() {
+            logger.info("Hello Nested Interface");
+        }
+
+        public static void main(String[] args) {
+            OuterInterface.InnerInterface innerInterface = new Main();
+            innerInterface.msg();
+        }
+    }
+    // Output :- Hello Nested Interface
+
+
+    Question :- Can we define a class inside the interface
+    Answer :-  Yes, if we define a class inside the interface, the Java compiler creates a 'static nested class'
+                interface M {
+                    class A {
+                        //
+                    }
+                }
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
